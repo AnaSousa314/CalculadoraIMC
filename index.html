@@ -4,27 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
+
 </head>
 <body>
-  <label for="peso">
-    Informe o seu peso:
-  </label>
-  <br>
-  <input name="peso" id="peso" type="number" step="0.01">
-  <br><br>
-  <label for="altura">
-    Informe a sua altura em metros:
-  </label>
-  <br>
-  <input name="altura" id="altura" type="number" step="0.01">
-  <br><br>
-  <button id="calc">Calcular</button>
-
-  <br><br><br>
-
-  <div id="table">
-
+  <div class="content">
+    <div class="calculadora">
+      <div>
+        <div class="calc-peso">
+          <label for="peso">
+            Informe o seu peso:
+          </label>
+          <br>
+          <input name="peso" id="peso" type="number" step="0.01"> kg
+        </div>
+        <br><br>
+        <div class="calc-altura">
+          <label for="altura">
+            Informe a sua altura em metros:
+          </label>
+          <br>
+          <input name="altura" id="altura" type="number" step="0.01"> m
+        </div>
+        <br>
+        <div class="calc-btn">
+          <button id="calc" class="scale-up-center">Calcular</button>
+        </div>
+        <br><br><br>
+      </div>
+    </div>
+  </div>
+  
+  <div class="calc-table"> 
+    <div id="table">
+  
+    </div>
   </div>
   <script src="./script.js"></script>
 </body>
